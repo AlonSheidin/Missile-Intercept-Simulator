@@ -3,9 +3,11 @@
 This repository contains a continuous-time physics simulation of surface-to-air and air-to-air missile engagements.
 
 The engine uses a 4th-order Runge-Kutta numerical integrator for flight dynamics, Proportional Navigation for terminal guidance, and an Kalman Filter for state estimation. The simulation accounts for aerodynamic variables such as fin stall, dynamic mass depletion.
+### David's Sling vs Cruise Missile
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/30306c66-54d2-45b1-8e8e-22860649fe69" />
 
-<img width="1000" height="600" alt="Image" src="https://github.com/user-attachments/assets/30306c66-54d2-45b1-8e8e-22860649fe69" />
-<img width="1000" height="600" alt="Image" src="https://github.com/user-attachments/assets/d2108fda-0aa5-40b2-8f00-d4e4e07adade" />
+### Iron Dome vs Ballistic Rocket
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/d2108fda-0aa5-40b2-8f00-d4e4e07adade" />
 
 ## Physics and Flight Dynamics
 The simulation calculates continuous flight dynamics rather than relying on constant-acceleration models.
