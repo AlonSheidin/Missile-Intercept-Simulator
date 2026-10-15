@@ -2,7 +2,7 @@
 
 This repository contains a continuous-time physics simulation of surface-to-air and air-to-air missile engagements.
 
-The engine uses a 4th-order Runge-Kutta (RK4) numerical integrator for flight dynamics, Proportional Navigation (Pro-Nav) for terminal guidance, and an Kalman Filter (KF) for state estimation. The simulation accounts for aerodynamic variables such as fin stall, dynamic mass depletion.
+The engine uses a 4th-order Runge-Kutta numerical integrator for flight dynamics, Proportional Navigation for terminal guidance, and an Kalman Filter for state estimation. The simulation accounts for aerodynamic variables such as fin stall, dynamic mass depletion.
 
 
 ## Physics and Flight Dynamics
