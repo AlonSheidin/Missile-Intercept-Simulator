@@ -22,7 +22,7 @@ The system architecture separates the continuous physical environment from the d
 
 **Installation**
 ```bash
-git clone [[https://github.com/AlonSheidin/Missile-Intercept-Simulator.git](https://github.com/AlonSheidin/Missile-Intercept-Simulator.git)](https://github.com/AlonSheidin/Missile-Intercept-Simulator.git)
+git clone https://github.com/AlonSheidin/Missile-Intercept-Simulator.git
 cd Missile-Intercept-Simulator
 pip install -r requirements.txt
 ```
