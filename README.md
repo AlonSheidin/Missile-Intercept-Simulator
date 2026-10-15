@@ -34,7 +34,7 @@ pip install -r requirements.txt
 ## Running the Simulation
 Engagement geometries are defined in Scenarios.py. Run the main entry point to execute the simulation and launch the Matplotlib visualization:
 ```Bash
-python main.py
+python Main.py
 ```
 ## Configured Engagement Scenarios
 
