@@ -9,7 +9,9 @@ import Visualizer
 # SIMULATION CONFIGURATION CONTROLS
 # ==========================================
 SHOW_ANIMATION = True
-SHOW_TELEMETRY = True
+SHOW_TELEMETRY = False
+
+SAVE_ANIMATION_GIF = False
 # ==========================================
 
 def main():
@@ -17,7 +19,6 @@ def main():
     missile, target, sim_config = Scenarios.create_davids_sling_scenario()
     logger = DataLogger()
     environment = SimulationEnvironment(missile, target, logger, sim_config)
-
     print(f"Running RK4 simulation (dt={sim_config.dt}s)...")
     environment.run()
     flight_data = environment.logger.get_arrays()
@@ -31,6 +32,11 @@ def main():
     if SHOW_ANIMATION:
         anim = Visualizer.animate_flight(flight_data)
         active_animations.append(anim)
+
+        if SAVE_ANIMATION_GIF:
+            print("Saving animation to GIF... (this may take 30-60 seconds)")
+            anim.save('interception.gif', writer='pillow', fps=30)
+            print("GIF saved successfully!")
 
     if SHOW_ANIMATION or SHOW_TELEMETRY:
         plt.show()

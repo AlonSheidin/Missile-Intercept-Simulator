@@ -13,10 +13,20 @@ def animate_flight(flight_data: dict) -> FuncAnimation:
     # Calculate bounding box for the plot
     all_x = np.concatenate([flight_data["m_truth_x"], flight_data["t_truth_x"]])
     all_y = np.concatenate([flight_data["m_truth_y"], flight_data["t_truth_y"]])
-    padding = 50
-    ax.set_xlim(np.min(all_x) - padding, np.max(all_x) + padding)
-    ax.set_ylim(np.min(all_y) - padding, np.max(all_y) + padding)
-    ax.axis("equal")
+    
+    x_span = np.max(all_x) - np.min(all_x)
+    y_span = np.max(all_y) - np.min(all_y)
+    
+    # Dynamic 5% padding (with a 1000m minimum so flat trajectories don't break the Y-axis)
+    x_pad = max(x_span * 0.05, 1000.0)
+    y_pad = max(y_span * 0.05, 1000.0)
+    
+    ax.set_xlim(np.min(all_x) - x_pad, np.max(all_x) + x_pad)
+    
+    # Ensure the ground (Y=0) is always visible
+    min_y = min(0.0, np.min(all_y)) 
+    ax.set_ylim(min_y - (y_pad * 0.5), np.max(all_y) + y_pad)
+    
     ax.grid(True)
     ax.set_title("Kinematic Intercept Simulation")
 

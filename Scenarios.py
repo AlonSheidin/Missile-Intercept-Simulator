@@ -152,8 +152,8 @@ def create_davids_sling_scenario():
     # 3. Cruise Missile Specs
     cruise_missile = Target(
         truth_state=State(
-            pos=np.array([40000.0, mach]), 
-            vel=np.array([-290.0, 0.0]) 
+            pos=np.array([40000.0, 100]), 
+            vel=np.array([-1*mach, 0.0]) 
         ),
         guidance_func=cruise_missile_level_flight
     )
