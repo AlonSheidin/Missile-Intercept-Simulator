@@ -4,7 +4,7 @@ This repository contains a continuous-time physics simulation of surface-to-air 
 
 The engine uses a 4th-order Runge-Kutta numerical integrator for flight dynamics, Proportional Navigation for terminal guidance, and an Kalman Filter for state estimation. The simulation accounts for aerodynamic variables such as fin stall, dynamic mass depletion.
 ### David's Sling vs Cruise Missile
-<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/30306c66-54d2-45b1-8e8e-22860649fe69" />
+<img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/081832f2-09c2-4a11-907b-0937422b5a5b" />
 
 ### Iron Dome vs Ballistic Rocket
 <img width="500" height="300" alt="Image" src="https://github.com/user-attachments/assets/d2108fda-0aa5-40b2-8f00-d4e4e07adade" />
