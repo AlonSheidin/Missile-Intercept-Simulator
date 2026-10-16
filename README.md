@@ -40,6 +40,6 @@ python Main.py
 
 The Scenarios.py file uses dataclasses for dependency injection to test different physical geometries.
 
-* Vertical Launch (David's Sling profile): A heavy, multi-pulse interceptor fires vertically at 80 degrees, executing a TVC pitch-over to loft over the lower atmosphere before diving onto a cruise missile.
+* Vertical Launch (David's Sling profile): A heavy, multi-pulse interceptor fires vertically at 80 degrees, executing a pitch-over to loft over the lower atmosphere before diving onto a cruise missile.
 * Surface-to-Air (Iron Dome profile): A short-range interceptor fires from a slanted canister to intercept an unguided rocket following a ballistic arc.
 * Air-to-Air: A Mach 0.9 launch against a target executing a continuous 9-G sinusoidal evasive weave.
