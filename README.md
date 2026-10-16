@@ -14,7 +14,7 @@ The simulation calculates continuous flight dynamics rather than relying on cons
 * Dynamic mass depletion: Thrust applies a constant force, which increases the acceleration rate as the solid rocket motor burns propellant and reduces the vehicle's mass.
 * Aerodynamic drag: Atmospheric density and drag deceleration are calculated based on the current altitude and velocity.
 * Dynamic G-Limits: The interceptor is constrained by structural limits and dynamic pressure. At low speeds or high altitudes, the fins stall, simulating real-world minimum engagement ranges.
-* Discrete tunneling prevention: The engine uses Point of Closest Approach (PCA) logic to detect sub-meter kinetic impacts at hypersonic closing velocities, preventing collision detection failures between physics frames.
+* Discrete tunneling prevention: The engine uses Point of Closest Approach logic to detect sub-meter kinetic impacts at hypersonic closing velocities, preventing collision detection failures between physics frames.
 
 ## Guidance and Control
 The system architecture separates the continuous physical environment from the discrete sensor and control logic.
