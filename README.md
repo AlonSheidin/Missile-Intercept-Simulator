@@ -18,7 +18,7 @@ The simulation calculates continuous flight dynamics rather than relying on cons
 
 ## Guidance and Control
 The system architecture separates the continuous physical environment from the discrete sensor and control logic.
-* Kalman Filter (KF): Processes simulated GPS and radar measurements to estimate the state of the interceptor and target.
+* Kalman Filter: Processes simulated GPS measurements to estimate the state of the interceptor and target.
 * Proportional Navigation: Calculates line-of-sight angular rates to command terminal intercept trajectories.
 * Multi-phase guidance: Vertical launch profiles execute a programmed pitch-over maneuver to clear the lower atmosphere before activating the Pro-Nav seeker.
 
