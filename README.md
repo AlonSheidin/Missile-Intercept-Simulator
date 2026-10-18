@@ -27,8 +27,10 @@ The simulation is driven by standard aerospace flight mechanics equations:
 * **Numerical Integration:** State updates (position, velocity) are computed using a 4th-Order Runge-Kutta (RK4) method for high stability over large time steps.
 * **Kalman Filter State Estimation:** A 2D discrete-time filter that fuses noisy sensor measurements with a predictive kinematic physics model. The implementation accounts for state transitions ($F$) and optional commanded acceleration control inputs ($u$) mapped through a control matrix ($B$). The optimal state vector ($X$) is recursively computed in two phases:
   * **Predict:** Extrapolates the state and system uncertainty forward in time:
+    
     $$\hat{X}_{k}^- = F\hat{X}_{k-1} + Bu_k$$
   * **Update:** Corrects the prior estimate using new 2D positional sensor measurements ($Z_k$), the measurement matrix ($H$), and the calculated Kalman Gain ($K$):
+    
     $$\hat{X}_k = \hat{X}_{k}^- + K(Z_k - H\hat{X}_{k}^-)$$
     
 ## Guidance and Control
