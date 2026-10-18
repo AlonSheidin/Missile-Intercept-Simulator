@@ -21,7 +21,7 @@ The simulation calculates continuous flight dynamics rather than relying on basi
 ## Mathematical Models
 The simulation is driven by standard aerospace flight mechanics equations:
 * **Proportional Navigation Law:** Generates acceleration commands perpendicular to the line-of-sight based on the closing velocity and Line of Sight (LOS) rate:
-  $$a_c = N' V_c \dot{\lambda}$$
+  $$a_c = N V_c \dot{\lambda}$$
 * **Aerodynamic Drag:** Deceleration is dynamically calculated using air density, velocity, reference area, and a drag coefficient:
   $$F_D = \frac{1}{2} \rho v^2 C_D A$$
 * **Numerical Integration:** State updates (position, velocity) are computed using a 4th-Order Runge-Kutta (RK4) method for high stability over large time steps.
